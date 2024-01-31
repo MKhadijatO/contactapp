@@ -8,7 +8,7 @@ const Header = () => {
         src={logo}
         style={{ height: "35px", verticalAlign: "top" }}
       ></img>
-      <span className="h2 pt-4 m-2 text-white">CountOpedia</span>
+      <span className="h2 pt-4 m-2 text-white">Contactopedia</span>
     </div>
   );
 };
