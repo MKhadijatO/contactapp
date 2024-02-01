@@ -1,7 +1,7 @@
 const GeneralContacts = () => {
   return (
     <div>
-      <button className="btn btn-danger form-Control">
+      <button className="btn btn-secondary form-Control">
         Contacts
       </button>
     </div>

@@ -12,21 +12,21 @@ class ContactIndex extends React.Component {
     return (
       <div>
         <Header />
-        <div>
-          <div>
-            <div>
+        <div className="container" style= {{minHeight: "85vh"}}>
+          <div className="row py-3">
+            <div className="col-4 offset-2">
               <AddRandomContact />
             </div>
-            <div>
+            <div className="row py-2">
               <RemoveAllContacts />
             </div>
-            <div>
+            <div className="row py-2">
               <AddContact />
             </div>
-            <div>
+            <div className="row py-2">
               <FavoriteContacts />
             </div>
-            <div>
+            <div className="row py-2">
               <GeneralContacts />
             </div>
           </div>
