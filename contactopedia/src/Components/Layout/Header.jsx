@@ -1,4 +1,4 @@
-import logo from "../src/images/react.png";
+import logo from "../../images/react.png";
 
 const Header = () => {
   return (
@@ -8,7 +8,7 @@ const Header = () => {
         src={logo}
         style={{ height: "35px", verticalAlign: "top" }}
       ></img>
-      <span className="h2 pt-4 m-2 text-white">Contactopedia</span>
+      <span className="h2 pt-4 m-2 text-white">ContactOpedia</span>
     </div>
   );
 };
