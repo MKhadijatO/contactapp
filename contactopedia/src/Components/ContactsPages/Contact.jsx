@@ -1,7 +1,9 @@
-const Contacts = () => {
+const Contacts = (props) => {
     return (
       <div>
-        <button className="btn btn-danger form-control">Contacts</button>
+        <button className="btn btn-danger form-control">
+          {props.contact.name}
+        </button>
       </div>
     );
   };
