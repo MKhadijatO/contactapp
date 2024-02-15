@@ -70,7 +70,7 @@ class ContactIndex extends React.Component {
             </div>
             <div className="row py-3">
               <GeneralContacts contacts={this.state.contactList.filter(
-                  (u) => u.isFavorite === true
+                  (u) => u.isFavorite === false
                 )}/>
             </div>
           </div>
