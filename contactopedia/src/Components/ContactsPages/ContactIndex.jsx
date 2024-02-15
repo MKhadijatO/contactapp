@@ -7,7 +7,42 @@ import GeneralContacts from "./GeneralContacts";
 import AddContact from "./AddContact";
 import Footer from "../Layout/Footer";
 
+//class based components are used for state
 class ContactIndex extends React.Component {
+  //constructor are used to add state
+  constructor(props) {
+    super(props);
+    this.state = {
+      contactList: [
+        {
+          id: "Joe",
+          email: "joe@gmail.com",
+          phone: 24587595481,
+          isFavorite: true
+        },
+        {
+          id: "Mike",
+          email: "mike@gmail.com",
+          phone: 24587595482,
+          isFavorite: false
+        },
+        {
+          id: "Ian",
+          email: "ian@gmail.com",
+          phone: 24587595483,
+          isFavorite: true
+        },
+        {
+          id: "Park",
+          email: "park@gmail.com",
+          phone: 24587595484,
+          isFavorite: false
+        }
+      ]
+      
+    }
+  }
+
   render() {
     return (
       <div>
