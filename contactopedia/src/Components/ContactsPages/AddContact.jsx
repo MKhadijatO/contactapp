@@ -1,7 +1,7 @@
 const AddContact = () => {
     return (
       <div>
-        <button className="btn btn-secondary form-Control">Add Contact</button>
+        <button className="btn btn-secondary form-control">Add Contact</button>
       </div>
     );
   };

@@ -1,7 +1,7 @@
 const RemoveAllContacts = () => {
     return (
         <div>
-            <button className="btn btn-danger form-Control">Remove All Contacts</button>
+            <button className="btn btn-danger form-control">Remove All Contacts</button>
         </div>
     )
 }
