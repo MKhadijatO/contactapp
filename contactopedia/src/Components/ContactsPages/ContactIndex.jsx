@@ -15,58 +15,67 @@ class ContactIndex extends React.Component {
     this.state = {
       contactList: [
         {
-          id: "Joe",
+          id: 1,
+          name: "Joe",
           email: "joe@gmail.com",
           phone: 24587595481,
-          isFavorite: true
+          isFavorite: true,
         },
         {
-          id: "Mike",
+          id: 2,
+          name: "Mike",
           email: "mike@gmail.com",
           phone: 24587595482,
-          isFavorite: false
+          isFavorite: false,
         },
         {
-          id: "Ian",
+          id: 3,
+          name: "Ian",
           email: "ian@gmail.com",
           phone: 24587595483,
-          isFavorite: true
+          isFavorite: true,
         },
         {
-          id: "Park",
+          id: 4,
+          name: "Park",
           email: "park@gmail.com",
           phone: 24587595484,
-          isFavorite: false
-        }
-      ]
-      
-    }
+          isFavorite: false,
+        },
+      ],
+    };
   }
 
   render() {
     return (
       <div>
         <Header />
-        <div className="container" style= {{minHeight: "85vh"}} >
+        <div className="container" style={{ minHeight: "85vh" }}>
           <div className="row py-3">
             <div className="col-4 offset-2">
-              <AddRandomContact/>
+              <AddRandomContact />
             </div>
             <div className="col-4">
-              <RemoveAllContacts/>
+              <RemoveAllContacts />
             </div>
             <div className="row py-3">
-              <AddContact/>
+              <AddContact />
             </div>
             <div className="row py-3">
-              <FavoriteContacts/>
+              <FavoriteContacts
+                contacts={this.state.contactList.filter(
+                  (u) => u.isFavorite === true
+                )}
+              />
             </div>
             <div className="row py-3">
-              <GeneralContacts/>
+              <GeneralContacts contacts={this.state.contactList.filter(
+                  (u) => u.isFavorite === true
+                )}/>
             </div>
           </div>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     );
   }
