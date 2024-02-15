@@ -16,28 +16,28 @@ class ContactIndex extends React.Component {
       contactList: [
         {
           id: 1,
-          name: "Joe",
+          name: "Joe Sanley",
           email: "joe@gmail.com",
           phone: 24587595481,
           isFavorite: true,
         },
         {
           id: 2,
-          name: "Mike",
+          name: "Mike Dan",
           email: "mike@gmail.com",
           phone: 24587595482,
           isFavorite: false,
         },
         {
           id: 3,
-          name: "Ian",
+          name: "Ian Elliot",
           email: "ian@gmail.com",
           phone: 24587595483,
           isFavorite: true,
         },
         {
           id: 4,
-          name: "Park",
+          name: "Park Chan",
           email: "park@gmail.com",
           phone: 24587595484,
           isFavorite: false,
