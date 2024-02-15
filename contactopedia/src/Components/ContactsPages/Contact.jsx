@@ -19,6 +19,12 @@ const Contacts = (props) => {
           {props.contact.phone}
           </div>
       </div>
+      <div>
+        <button className={`btn btn-sm m-1 ${
+          props.contact.isFavorite? "btn-warning": "btn-outline-warning"}`}>
+        <i class="bi bi-star"></i>
+        </button>
+      </div>
       <button className="btn btn-secondary form-control">
         {props.contact.name}
       </button>
