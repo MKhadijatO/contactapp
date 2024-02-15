@@ -20,13 +20,13 @@ class ContactIndex extends React.Component {
             <div className="col-4">
               <RemoveAllContacts/>
             </div>
-            <div className="row py-2">
+            <div className="row py-3">
               <AddContact/>
             </div>
-            <div className="row py-2">
+            <div className="row py-3">
               <FavoriteContacts/>
             </div>
-            <div className="row py-2">
+            <div className="row py-3">
               <GeneralContacts/>
             </div>
           </div>
